@@ -6,8 +6,23 @@ syntax on
 " Treat a press of the tab key as a four space add
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 
-set t_Co=256
+" UI config
+set number
+set showcmd
+set cursorline
+set wildmenu
+set lazyredraw
+set showmatch
+filetype indent on
 
+" Search Settings
+set incsearch " search as enter
+set hlsearch " highlight
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+" Terminal color and colorscheme
+set t_Co=256
 colorscheme jellybeans
 
 " for lightline
@@ -40,3 +55,5 @@ let g:limelight_eop = '\ze\n^\s'
 " Highlighting priority (default: 10)
 "   Set it to -1 not to overrule hlsearch
 let g:limelight_priority = -1
+
+autocmd! User GoyoEnter Limelight
