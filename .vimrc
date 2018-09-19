@@ -34,6 +34,9 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
 " Let backspace work
 set backspace=indent,eol,start
 
+" change leader
+let mapleader=","
+
 " Terminal color and colorscheme
 set t_Co=256
 colorscheme jellybeans
