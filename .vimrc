@@ -21,6 +21,19 @@ set hlsearch " highlight
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
+" Movement - literal up/down
+nnoremap j gj
+nnoremap k gk
+
+" Ctrl-P Settings
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
+let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""'
+
+" Let backspace work
+set backspace=indent,eol,start
+
 " Terminal color and colorscheme
 set t_Co=256
 colorscheme jellybeans
