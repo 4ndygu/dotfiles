@@ -39,7 +39,6 @@ let mapleader=","
 
 " Terminal color and colorscheme
 set t_Co=256
-colorscheme jellybeans
 
 " for lightline
 set laststatus=2
@@ -73,3 +72,9 @@ let g:limelight_eop = '\ze\n^\s'
 let g:limelight_priority = -1
 
 autocmd! User GoyoEnter Limelight
+
+" powerline symbols
+let g:airline_powerline_fonts = 1
+
+" yank to system clipboard
+set clipboard=unnamed
